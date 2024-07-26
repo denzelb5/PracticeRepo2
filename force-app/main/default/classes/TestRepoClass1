@@ -2,3 +2,10 @@ public static Account getAccount(accountId) {
     Account acct = [SELECT Id FROM Account WHERE Id = :accountId];
     return acct;
 }
+
+public static Contact getContact(conId) {
+    Contact con = [
+        SELECT Id FROM Contact WHERE Id = :conId
+    ];
+    return con;
+}
